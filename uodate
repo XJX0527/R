@@ -1,0 +1,21 @@
+关于安装
+1.R安装：https://www.r-project.org/
+2.Rtools安装：https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/Rtools/history.html（镜像）
+  下载后打开RStudio输入writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
+  关闭重启RStudio
+  再次打开RStudio输入Sys.which("make")
+  输入install.packages("jsonlite", type = "source")就可以安装包了
+3.RStudio安装：https://www.rstudio.com/products/rstudio/
+关于更新
+1.删掉重装
+2.打开RStudio
+  输入：R.version查看R版本，packageVersion("mypackage")查看包版本
+  输入：install.packages("installr")
+        library(installr)
+        updateR()
+  输入：pkgs<-installed.packages()
+        plot(as.factor(pkgs[,'Built']),col=2:4,main='Packages built version',ylab='Count of packages')
+        查看包对应的R语言版本，大部分包可以被更新到最新版本
+  输入： update.packages(checkBuilt=TRUE, ask=FALSE) 更新所有的包
+  
+  
