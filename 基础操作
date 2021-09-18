@@ -17,3 +17,11 @@ require()：载入包
 detach("package:")：关闭包的使用
 remove.packages("")：删除包
 
+读取数据：
+credit_data <- read.csv('cs-training.csv',stringsAsFactors = FALSE)
+参数stringsAsFactors
+stringsAsFactors = FALSE---此时数据框将不会默认把字符型转化为因子。
+当数据框中含有字符类型的数据时，注意在数据框建立时加入语句：stringsAsFactors = FALSE
+
+保存代码：
+savehistory("C:/Users/18356/Desktop/R/fenxi.Rhistory")
