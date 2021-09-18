@@ -16,6 +16,7 @@ library()：显示已安装的包
 require()：载入包
 detach("package:")：关闭包的使用
 remove.packages("")：删除包
+names(cr_data)<-c('y','x1','x2') ：对数据框中的列名重新命名
 
 读取数据：
 credit_data <- read.csv('cs-training.csv',stringsAsFactors = FALSE)
