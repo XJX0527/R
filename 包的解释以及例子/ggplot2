@@ -1,0 +1,6 @@
+简单介绍
+ggplot2是绘图包---数据可视化（EDA中常用）
+install.packages("ggplot2")
+library(ggplot2)
+ls("package:ggplot2")：查看内置函数
+help(package="ggplot2")：帮助
