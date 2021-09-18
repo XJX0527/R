@@ -19,6 +19,9 @@ remove.packages("")：删除包
 names(cr_data)<-c('y','x1','x2') ：对数据框中的列名重新命名
 
 读取数据：
+library(readr)
+dataset <- read_csv('C:/Users/18356/Desktop/R课程/实验1/data.csv')  #建议此法
+
 credit_data <- read.csv('cs-training.csv',stringsAsFactors = FALSE)
 参数stringsAsFactors
 stringsAsFactors = FALSE---此时数据框将不会默认把字符型转化为因子。
